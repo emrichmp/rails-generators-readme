@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :admins
+  get 'admin/dashboard'
+
+  get 'admin/stats'
+
+  get 'admin/financials'
+
+  get 'admin/settings'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'categories/show'
 
